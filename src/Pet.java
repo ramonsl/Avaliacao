@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by ramon on 10/10/16.
@@ -91,6 +92,27 @@ public class Pet {
             System.out.println("Opa não temos esse gatinho");
             return null;
         }
+
+    }
+
+    public void gerarNumeros(){
+        int vetor[]= new int[10];
+        for (int i=0;i<10;i++){
+            Random r= new Random();
+            vetor[i]= r.nextInt(10000);
+        }
+
+    }
+    public  long calcularTempo(){
+        long ti ;
+        long tf;
+
+        ti = System.currentTimeMillis();
+        ///teu algortitmo..
+        //quinhetas mil linhas
+        tf =System.currentTimeMillis();
+
+        return tf-ti ;
 
     }
 
